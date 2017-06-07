@@ -8,7 +8,7 @@ function replaceAds(target) {
   let inses = target.getElementsByTagName('ins');
   for(let ins of inses) {
     if (ins.hasAttribute('data-ad-format')) {
-      ins.parentElement.innerHTML = '<div class="netguru-ad" style="width: 100%; min-width: 30px; min-height: 35px; border: 1px solid red;">Netguru Ads</div>' + ins.parentElement.innerHTML;
+      ins.innerHTML = '<div class="netguru-ad" style="text-align: center; width: 100%; min-width: 35px; min-height: 55px; border: 1px solid red;">Netguru Ads</div>' + ins.innerHTML;
     }
   }
 }
